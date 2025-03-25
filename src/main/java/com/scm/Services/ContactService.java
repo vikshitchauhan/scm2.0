@@ -31,6 +31,9 @@ public interface ContactService {
 
      Page<Contact> getByUser(user username ,int page ,int size ,String sortBy, String order);
 
+    public long getTotalContactsForUser(Long userId);
+     
+
 
       //search contact
     Page<Contact> searchByName(String namekeyword,int page ,int size ,String sortBy, String order ,user user);

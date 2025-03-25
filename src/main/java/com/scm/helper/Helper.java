@@ -12,6 +12,7 @@ public class Helper {
     public static String getEmailOfLoggedInuser(org.springframework.security.core.Authentication authentication){
         //agar hmne email id password se login kiya h toh email kse nikalenge ya google se kiya h toh kse ya ya github se
        
+       
 
         if(authentication instanceof OAuth2AuthenticationToken){
             var oAuth2AuthenticationToken = (OAuth2AuthenticationToken) authentication;

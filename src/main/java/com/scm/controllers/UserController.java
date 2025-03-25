@@ -51,6 +51,16 @@ public class UserController {
     @RequestMapping(value = "/profile")
 
    public String userProfile(Model model, Authentication authentication) { 
+        // Get logged-in user's email
+        // String email = authentication.getName();
+        // logger.info("Email: " + email);
+        // user loggedInUser = userservice.getUserbyEmail(email); // Fetch user details
+        // model.addAttribute("loggedInUser", loggedInUser); // Add user to model
+       
+ 
+
+        
+        
         return "user/profile";
     }
 }

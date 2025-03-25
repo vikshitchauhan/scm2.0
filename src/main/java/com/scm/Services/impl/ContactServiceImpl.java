@@ -111,6 +111,11 @@ public class ContactServiceImpl implements ContactService {
         var pageable = PageRequest.of(page, size, sort);
         return contactRepo.findByUserAndEmailContaining(user, emailkeyword,pageable);}
 
+
+    public long getTotalContactsForUser(Long userId) {
+        return contactRepo.countByUserId(userId);
+    }
+
    
 
 }
