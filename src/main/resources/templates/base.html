@@ -38,7 +38,7 @@
 
   <!-- Navbar for non-logged-in user -->
   <div th:unless="${loggedInUser}">
-    <div th:replace="navbar :: navbar"></div>
+    <div th:replace="~{navbar :: navbar}"></div>
   </div>
 
   <!-- Main content -->
