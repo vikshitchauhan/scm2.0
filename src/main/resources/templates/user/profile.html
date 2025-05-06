@@ -26,10 +26,10 @@ th:replace="~{base::parent(~{::#content},~{::title},~{::script})}">
                 <img 
                 onerror="this.src='https://www.pngkit.com/png/detail/126-1262807_instagram-default-profile-picture-png.png'"
                 data-th-src="@{${loggedInUser.profilePic}}" src="/docs/images/people/profile-picture-1.jpg"  alt="Profile Photo" class="w-44 h-44 rounded-full shadow-lg object-cover mb-4">
-                <h2 class="text-2xl font-semibold mb-2" data-th-text=${loggedInUser.name}>User Name</h2>
-                <p class="text-blue-500 mb-2" data-th-text="${loggedInUser.email}">user.email@example.com</p>
-                <p class="text-blue-500 mb-2" data-th-text="${loggedInUser.phoneNumber}">123-456-7890</p>
-                <p class="text-blue-500 mb-4 text-center" data-th-text="${loggedInUser.about}">About the user...</p>
+                <h2 class="text-4xl text-green-600 dark:text-white font-semibold mb-2" data-th-text=${loggedInUser.name}>User Name</h2>
+                <h3 class="text-blue-800 text-xl dark:text-orange-300" data-th-text="${loggedInUser.email}">user.email@example.com</h3>
+                <p class="text-blue-800 mb-2 text-xl  dark:text-orange-300" data-th-text="${loggedInUser.phoneNumber}">123-456-7890</p>
+                <p class="text-blue-800 mb-4 text-center text-xl  dark:text-orange-300" data-th-text="${loggedInUser.about}">About the user...</p>
                 
                     
             </div>
