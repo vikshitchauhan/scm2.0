@@ -1,6 +1,7 @@
 console.log("Contacts.js");
 
-const baseURL = "http://localhost:8080";
+const baseURL = window.location.origin;
+//const baseURL = "http://localhost:8080";
 const viewContactModal = document.getElementById("view_contact_modal");
 // options with default values
 const options = {
